@@ -5,7 +5,7 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-name: X64-master
+name: lede-19.07
 
 on:
   schedule:
@@ -34,7 +34,7 @@ jobs:
     - name: Clone source code
       env: 
         REPO_URL: https://github.com/michael6555/lede
-        REPO_BRANCH: -master
+        REPO_BRANCH: master
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH lede
       
     - name: Clone Config
