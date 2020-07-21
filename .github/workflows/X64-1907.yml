@@ -10,9 +10,9 @@ name: X64-1907
 on:
   schedule:
     - cron: 0 20 * * *
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
           
     - name: Clone source code
       env: 
-        REPO_URL: https://github.com/michael655/lede
+        REPO_URL: https://github.com/michael6555/lede
         REPO_BRANCH: dev
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH lede
       
