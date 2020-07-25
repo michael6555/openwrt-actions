@@ -85,3 +85,9 @@ jobs:
       with:
         name: OpenWrt firmware
         path: ./artifact/
+    - name: Upload  IPK
+       uses: actions/upload-artifact@master
+       with:
+          name: OpenWrt-x86-IPK
+          path: ./lede/bin/packages/
+          
